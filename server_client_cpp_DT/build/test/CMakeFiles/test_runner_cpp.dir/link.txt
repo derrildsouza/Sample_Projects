@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/test_runner_cpp.dir/src/TestRunner.cpp.o -o test_runner_cpp  ../common/libcommon_cpp.a /usr/lib/x86_64-linux-gnu/libgtest.a -lpthread

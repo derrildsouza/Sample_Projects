@@ -1,2 +1,0 @@
-/usr/bin/ar qc libcommon_cpp.a CMakeFiles/common_cpp.dir/src/Utils.cpp.o
-/usr/bin/ranlib libcommon_cpp.a
