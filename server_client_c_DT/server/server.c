@@ -40,10 +40,12 @@ int main(int argc, char *argv[]) {
     int port = DEFAULT_PORT;
     char *ip_address = NULL;
 
+    /* Implements: SWE_SRV_002, SWE_SRV_003, SWE_SRV_004 */
     if (parse_arguments(argc, argv, &ip_address, &port) != 0) {
         exit(EXIT_FAILURE);
     }
 
+    /* Implements: SWE_SRV_001 */
     // Creating socket file descriptor
     if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) == 0) {
         perror("socket failed");

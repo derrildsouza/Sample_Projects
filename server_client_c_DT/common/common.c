@@ -37,10 +37,13 @@ int parse_arguments(int argc, char *argv[], char **ip_address, int *port) {
     while ((opt_char = getopt(argc, argv, "i:p:")) != -1) {
         switch (opt_char) {
             case 'i':
+                /* Implements: SWE_CLI_002 */
                 *ip_address = optarg;
                 break;
             case 'p':
+                /* Implements: SWE_SRV_002, SWE_CLI_003 */
                 val = strtol(optarg, &endptr, 10);
+                /* Implements: SWE_SRV_004, SWE_CLI_003 */
                 if (endptr == optarg || *endptr != '\0' || val < MIN_PORT || val > MAX_PORT) {
                     fprintf(stderr, "Invalid port number: %s\n", optarg);
                     return -1;

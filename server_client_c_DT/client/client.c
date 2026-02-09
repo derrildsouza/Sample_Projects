@@ -35,10 +35,12 @@ int main(int argc, char *argv[]) {
     int port = DEFAULT_PORT;
     char *server_ip = "127.0.0.1";
 
+    /* Implements: SWE_CLI_002, SWE_CLI_003, SWE_CLI_004 */
     if (parse_arguments(argc, argv, &server_ip, &port) != 0) {
         exit(EXIT_FAILURE);
     }
 
+    /* Implements: SWE_CLI_001 */
     if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
         printf("\n Socket creation error \n");
         return -1;
