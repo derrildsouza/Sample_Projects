@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/client_cpp.dir/src/main.cpp.o -o client_cpp  ../common/libcommon_cpp.a
