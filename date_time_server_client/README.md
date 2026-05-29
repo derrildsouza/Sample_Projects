@@ -18,10 +18,10 @@ A modern C++17 port of the application.
 
 ## Documentation
 Both projects adhere to the same requirements and architecture guidelines:
-- [System Requirements (SYS.1)](cpp_program/docs/aspice/system_requirements.md)
-- [Software Requirements (SWE.1)](cpp_program/docs/aspice/software_requirements.md)
-- [Architecture & Design (SWE.2/3)](cpp_program/docs/aspice/architecture.md)
-- [Traceability Matrix (SWE.4/5)](cpp_program/docs/aspice/traceability_matrix.md)
+- [System Requirements (SYS.1)](server_client_cpp_DT/docs/aspice/architecture.md)
+- [Software Requirements (SWE.1)](server_client_cpp_DT/docs/aspice/software_requirements.md)
+- [Architecture & Design (SWE.2/3)](server_client_cpp_DT/docs/aspice/architecture.md)
+- [Traceability Matrix (SWE.4/5)](server_client_cpp_DT/docs/aspice/traceability_matrix.md)
 
 ## Quick Start
 To build both projects:
