@@ -181,3 +181,37 @@ Linux service for cloudflared installed successfully
 
 Map public internet traffic hits from your custom domain straight into the internal local system execution ports on the Pi server node.
 
+
+   1. Navigate to the Published application routes tab layout section of your specific Pi-CasaOS tunnel control workspace.
+   2. Click on the blue action control layout button labeled Add a published application route.
+   3. Apply these exact operational configuration metrics inside the input data matrix fields:
+
+| Configuration Field | Explicit Production Entry Assignment Parameter |
+|---|---|
+| Subdomain | [Leave Completely Empty / Blank for Root Domain Mapping] |
+| Domain | derrildsouza.com |
+| Path | [Leave Completely Empty / Blank to Forward All Paths] |
+| Service Type | HTTP |
+| Service URL | localhost:80 |
+
+
+   1. Click Save at the absolute bottom right of the wizard screen.
+
+------------------------------
+## 🚀 Post-Deployment System Verification
+The infrastructure ecosystem is now completely self-contained, automated, and resilient against power cycles.
+## Automated Boot Verification Checklist:
+
+* System Start-up Layer: The kernel mounts external storage directly to /srv/storage1_320g before user service initialization steps run.
+* Network Interface Initialization: The cloudflared background service triggers automatically at boot, opening a secure outbound connection block to Cloudflare edge nodes.
+* Application Layer Deployment: Docker and CasaOS spin up on internal loopback port 80.
+* Dynamic DNS Autonomy: Because the tunnel points inside the local loopback space via localhost:80, your web domain address will never break, even if your home internet router shifts your internal IP address space!
+
+## Final Verification Test
+Disconnect an external device (like a smartphone) from your home network and switch to mobile cellular data. Navigate directly to your secure URL profile:
+%%MAGIT_PARSER_PROTECT%%text https://derrildsouza.com %%MAGIT_PARSER_PROTECT%%
+The browser will resolve past your ISP network layers, apply automated SSL certificate encryption routines, and display your CasaOS Server Login Dashboard Portal instantaneously from anywhere in the world.
+
+
+
+
